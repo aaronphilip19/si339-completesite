@@ -1,0 +1,479 @@
+body {
+    background-color: lightblue;
+    color: black;
+    font-family: "Roboto", sans-serif;
+    text-align: justify;
+  }
+h1{
+    font-size: 3em;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+  }
+h2{
+    font-size: 2em;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-style: italic;
+    padding: 10px;
+    text-decoration: underline overline;
+  }
+h3{
+    font-size: 1.5em;
+    font-family: "Roboto" sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-style: italic;
+    padding: 10px;
+  }
+p{
+    font-size: 1em;
+    line-height: 1.6;
+    padding: 10px;
+  }
+hr{
+    border: 2px solid black;
+  }
+footer{
+  width: 60%;
+  margin: auto;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 25px;
+  text-align: center;
+  background-color: wheat;
+}
+.footer_icon{
+  border: 5px solid black;
+  border-radius: 50%;
+}
+.material-icons{
+  text-align: center;
+  margin: auto;
+}
+
+.likes{
+  list-style-type: square;
+  list-style-position: inside;
+  line-height: 1.5;
+  border: 2px solid black;
+  background-color: wheat;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  animation-name: cover;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  opacity: 1;
+}
+@keyframes cover{
+  from{
+    opacity: 1;
+  }
+  to{
+    opacity: 0;
+  }
+}
+
+.recipe_steps{
+  list-style-type: square;
+  list-style-position: inside;
+  line-height: 1.5;
+  border: 2px solid black;
+  background-color: wheat;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
+.recipe_ingredients{
+  list-style-type: square;
+  list-style-position: inside;
+  line-height: 1.5;
+  border: 2px solid black;
+  background-color: wheat;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  background-color: rgb(40, 33, 33);
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  text-align: center;
+  margin: auto;
+  animation-name: navcolor;
+  animation-duration: 3s
+}
+@keyframes navcolor{
+  from {background-color: rgb(40, 33, 33) ;}
+  to {background-color: yellow;}
+}
+nav  ul li {
+  float: left;
+  margin: auto;
+  border-right: 1px solid white;
+}
+
+nav ul li a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 1.5em;
+  transition: 1s;
+}
+
+nav li a:hover {
+  background-color: rgb(40, 33, 33);
+  text-decoration: underline;
+  color: red;
+}
+
+nav a.active_page{
+  text-decoration: underline overline;
+  border: 2px solid red;
+  background-color: lightgoldenrodyellow;
+  color: red;
+}
+#skip{
+  position: absolute;
+  top: -100px;
+  left: -100px;
+  width: 0px;
+  height: 0px;
+  overflow: hidden;
+}
+#skip:focus{
+  position: relative;
+  top: 10px;
+  left: 10px;
+  z-index: 10;
+  color: red;
+  background-color: rgb(40, 33, 33);
+  text-decoration: underline;
+  border: 1px solid black;
+}
+.pets_gallery{
+  display: grid;
+  border: 3px solid black;
+  grid-template-columns: 400px;
+  grid-gap: 10px;
+  justify-content: center;
+  align-content: space-around;
+}
+img{
+  display: block;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 25px;
+  border: 2px solid black;
+  background-color: wheat;
+  text-align: center;
+  transition: all 0.2s ease-in;
+}
+img:hover{
+  background-color: white;
+  transform: scaleX(1.2);
+}
+.pets_gallery img{
+  width: 200px;
+  padding: 25px;
+  border: 2px solid black;
+  background-color: wheat;
+  margin: auto;
+  transition: all 0.2s ease-in;
+}
+.pets_gallery img:hover{
+  background-color: white;
+  border: 4px solid black;
+  transform: scale(1.5);
+
+}
+ .main_pet{
+  display: block;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 25px;
+  border: 2px solid black;
+  background-color: wheat;
+  background-image: url("/images/background_pet.jpg");
+  text-align: center;
+ }
+ .main_recipe{
+  display: block;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 25px;
+  border: 2px solid black;
+  background-color: wheat;
+  background-image: url("/images/background_recipe.jpg");
+  text-align: center;
+  transition: all 0.2s ease-in;
+}
+.main_recipe:hover{
+  background-color: white;
+  transform: scaleX(1.2);
+}
+.recipe_images{
+  display: block;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 25px;
+  border: 2px solid black;
+  background-color: wheat;
+  text-align: center;
+  transition: all 0.2s ease-in;
+}
+.recipe_images:hover{
+  background-color: white;
+  transform: scaleX(1.2);
+}
+.travel_images{
+  display: block;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 25px;
+  border: 2px solid black;
+  background-color: wheat;
+  text-align: center;
+  transition: all 0.2s ease-in;
+  animation-name: turn_black;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+}
+.travel_images:hover{
+  background-color: white;
+  transform: scaleX(1.2);
+}
+figcaption{
+padding: 10px;
+margin: 10px;
+text-align: center;
+font-size: 1.5;
+border: 2px solid black;
+background-color: blanchedalmond;
+border-radius: 10px;
+}
+.recipe_descript{
+padding: 10px;
+margin: 10px;
+text-align: center;
+font-size: 1.5;
+border: 2px solid black;
+background-color: blanchedalmond;
+border-radius: 10px;
+}
+.main_travel{
+  display: block;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+  padding: 25px;
+  border: 2px solid black;
+  background-color: wheat;
+  text-align: center;
+  transition: all 0.2s ease-in;
+  animation-name: turn_black;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes turn_black{
+  from{
+    background-color: wheat;
+  }
+  to{
+    background-color: rgb(40, 33, 33);
+  }
+}
+
+.main_travel:hover{
+  background-color: white;
+  transform: scaleX(1.2);
+}
+
+
+
+
+
+
+
+
+
+@media screen and (prefers-reduced-motion: reduce){
+  .gif{
+    display: none;
+  }
+  nav ul, .likes, .travel_images, .main_travel{
+    animation: none;
+  }
+  nav ul li a, img, .pets_gallery img, .main_recipe, .recipe_images{
+    transition: none;
+  }
+  img:hover, .pets_gallery img:hover, .main_recipe:hover, .recipe_images:hover, .travel_images:hover, .main_travel:hover{
+    transform: none;
+  }
+}
+
+
+
+@media only screen and (min-width: 600px) {
+  /* This would be used for tablet view */
+  .pets_gallery{
+    display: grid;
+    border: 5px solid black;
+    grid-template-columns: 250px 250px; 
+    grid-gap: 10px;
+    justify-content: center;
+    align-content: space-around;
+  }
+  .pets_gallery img{
+    width: 150px;
+    padding: 25px;
+    border: 3px solid black;
+    background-color: wheat;
+    margin: auto;
+  }
+  .recipe_steps{
+    list-style-type: square;
+    list-style-position: inside;
+    line-height: 1.5;
+    border: 2px solid black;
+    background-color: wheat;
+    margin: 15px;
+    padding: 15px;
+    text-align: center;
+  }
+  .recipe_ingredients{
+    list-style-type: square;
+    list-style-position: inside;
+    line-height: 1.5;
+    border: 2px solid black;
+    background-color: wheat;
+    margin: 15px;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  nav  ul li {
+    float: left;
+    margin: auto;
+    border-right: 3px solid white;
+  }
+  
+  nav ul li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    text-decoration: none;
+    font-size: 2em;
+    transition: 1s;
+  }
+  
+  nav li a:hover {
+    background-color: rgb(40, 33, 33);
+    text-decoration: underline;
+    color: red;
+  }
+  
+  nav a.active_page{
+    text-decoration: underline overline;
+    border: 3px solid red;
+    background-color: lightgoldenrodyellow;
+    color: red;
+  }
+  .likes{
+    text-align: left;
+  }
+  
+  
+}
+
+@media only screen and (min-width: 768px) {
+  /* This would be used for desktop view */
+  .pets_gallery{
+    display: grid;
+    border: 5px solid black;
+    grid-template-columns: 170px 170px 170px 170px; 
+    grid-gap: 20px;
+    justify-content: center;
+    align-content: space-around;
+  }
+  .pets_gallery img{
+    width: 145px;
+    padding: 20px;
+    border: 3px solid black;
+    background-color: wheat;
+    margin: auto;
+  }
+  .recipe_steps{
+    list-style-type: square;
+    list-style-position: inside;
+    line-height: 1.5;
+    border: 2px solid black;
+    background-color: wheat;
+    margin: 20px;
+    padding: 20px;
+    text-align: left;
+  }
+  .recipe_ingredients{
+    list-style-type: square;
+    list-style-position: inside;
+    line-height: 1.5;
+    border: 2px solid black;
+    background-color: wheat;
+    margin: 20px;
+    padding: 20px;
+    text-align: left;
+  }
+  
+
+  nav  ul li {
+    float: left;
+    margin: auto;
+    border-right: 3px solid white;
+  }
+  
+  nav ul li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 45px;
+    text-decoration: none;
+    font-size: 2.5em;
+    transition: 1.5s;
+  }
+  
+  nav li a:hover {
+    background-color: rgb(40, 33, 33);
+    text-decoration: underline;
+    color: red;
+  }
+  
+  nav a.active_page{
+    text-decoration: underline overline;
+    border: 3px solid red;
+    background-color: lightgoldenrodyellow;
+    color: red;
+  }
+  .likes{
+    text-align: left;
+  }
+  
+  
+}
+
